@@ -24,8 +24,7 @@ class VISA_Instrument(object):
     This class controls instruments via GPIB/serial connection.
     Check the port and address (GPIB only) of the instrument in advance.
 
-    If you use LAN - GPIB/serial interface, use also need
-    the ip address of the LAN.
+    If you use LAN - GPIB/serial interface, the ip address of the LAN is necessary as an input.
 
     If you use USB - GPIB/serial adapter to connect them to the computer,
     you need to make connection in advance.
