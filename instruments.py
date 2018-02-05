@@ -28,8 +28,12 @@ class VISA_Instrument(object):
 
     If you use USB - GPIB/serial adapter to connect them to the computer,
     you need to make connection in advance.
-    Use PyVISA (Mac) or Linux-GPIB (Linux) for connection.
-    NI-VISA is not supported at the current stage.
+    Use linux-gpib to establish connection.
+
+    I did not check GPIB/USB connection with Mac,
+    since Mac linux-gpib does not support Mac.
+    If you use NI-VISA, it may work by setting setPyVisaBackend('@ni'),
+    but I didn't check it.
     """
 
     def __init__(self, port=0, address=0, ip=None):
