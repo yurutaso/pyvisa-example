@@ -40,7 +40,7 @@ linux-gpib-4.0.4 (2017年現在の最新版)を[公式サイト](https://linux-g
 
 また、linux-gpibと同時にインストールされるpythonライブラリはpython2にしか対応していないので、
 python3からも使えるよう、language/python以下のソースコードを編集する。
-具体的には、Gpib.pyとgpibinter.cを[こちら](https://github.com/yurutaso/pyvisa)に修正し、以下の手順で手動でインストールする。
+具体的には、Gpib.pyとgpibinter.cを[こちら](https://github.com/yurutaso/pyvisa-example)に修正し、以下の手順で手動でインストールする。
 
 ```Shell
 cd '/path/to/linux-gpib-4.0.4.tar.gz'

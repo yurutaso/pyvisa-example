@@ -1,2 +1,3 @@
-pyvisa + pyvisa-py + GPIB/Serialによる測定機器の制御例
+Example of using GPIB/Serial interface with pyvisa + pyvisa-py.
 
+See info.md for detail.
