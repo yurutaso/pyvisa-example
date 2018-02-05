@@ -2,23 +2,11 @@
 # -*- coding:utf-8 -*-
 # -------------------------------------------------------------------------------------
 # Instruction:
-#   This script controls measurement instruments via GPIB or Serial interface.
-#   It is checked on Mac OSX 10.10, Ubuntu 14.04 LTS(32-bit) and 16.04 LTS (32-bit).
-#
-# Requirments: (and how to install them on Ubuntu)
-#   Connect gpib:
-#   - fxload (apt install fxload)
-#   - linux-gpib (see linux-gpib official manual)
-#   Python API
-#   - gpib and Gpib (normally, they are installed when installing linux-gpib)
-#   - pyserial (apt install python3-pyserial)
-#   - pyvisa and pyvisa-py (apt install python3-pyvisa-py, or, pip3 install pyvisa pyvisa-py)
-#   NOTE that gpib and Gpib modules are installed to python2.X site-packages by default.
-#   You must build and install them manually to use them on python3. (see linux-gpib.md)
-#
-# NOTE when using USB - GPIB/serial adapter:
-#   - You must connect GPIB/Serial correctly in advance.
-#   - Their permissions must be modified as '666' (i.e. run 'sudo chmod 666 /dev/gpib0 /dev/ttyUSB0', to use GPIB-USB and Serial-USB interfaces whose ports are both 0), otherwise a permission error will arise when opening these instruments.
+#   This is a example script of controling measurement instruments via GPIB or Serial interface.
+#   It is checked on Ubuntu 14.04 LTS(32-bit) and 16.04 LTS (32-bit).
+#   Mac and Windows are also available when using LAN/GPIB and LAN/Serial interface,
+#   but unavailable when using USB/GPIB and USB/Serial interface.
+#   See info.md to install requirements.
 #
 # NOTE:
 #   - Some warning messages often arise when finishing the script without deleting the ResourceManager instance.
